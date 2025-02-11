@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root
+{
+    --color-1: #FCE7C8;
+    --color-2: #000;
+    --color-3: #E5989B;
+    --color-4: #B5828C;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+    box-sizing: border-box;
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.header
+{
+    padding: 2% 0 0 15%;
+}
+
+.header__menu 
+{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link
+{
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+.pagina
+{
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagina__contenido
+{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pagina__contenido__titulo 
+{
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+}
+
+.titulo__destaque
+{
+    color: var(--color-3);
+    border-radius: 8px;
+    border: 2px solid var(--color-4);
+}
+
+.pagina__contenido__texto
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--fuente-montserrat);
+}
+
+.pagina__enlaces 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.pagina__enlaces__subtitulo
+{
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-3);
+}
+
+.pagina__enlaces__link
+{
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--color-2);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-2);
+    font-family: var(--fuente-montserrat);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--color-4);
+}
+
+.pagina__enlaces__link:hover 
+{
+    background-color: var(--color-1);
+}
+
+.footer 
+{
+    background-color: var(--color-3);
+    padding: 24px;
+    color: var(--color-1);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.destaque__footer 
+{
+    color: var(--color-4);
+    border-radius: 8px;
+    border: 2px solid var(--color-4);
+}
