@@ -157,5 +157,11 @@ body
     .pagina
     {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .pagina__contenido
+    {
+        width: auto;
     }
 }
