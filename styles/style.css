@@ -32,13 +32,13 @@ body
 .header__menu 
 {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .header__menu__link
 {
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-3);
     text-decoration: none;
@@ -54,29 +54,28 @@ body
 
 .pagina__contenido
 {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .pagina__contenido__titulo 
 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 
 .titulo__destaque
 {
     color: var(--color-3);
-    border-radius: 8px;
-    border: 2px solid var(--color-4);
+    border-radius: 0.5rem;
+    border: 0.125rem solid var(--color-4);
 }
 
 .pagina__contenido__texto
 {
-    text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 
@@ -86,32 +85,32 @@ body
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .pagina__enlaces__subtitulo
 {
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-3);
 }
 
 .pagina__enlaces__link
 {
-    width: 378px;
+    width: 50%;
     text-align: center;
-    border-radius: 8px;
-    border: 2px solid var(--color-2);
-    font-size: 24px;
+    border-radius: 0.5rem;
+    border: 0.125rem solid var(--color-2);
+    font-size: 1.5rem;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 1.25rem 0;
     text-decoration: none;
     color: var(--color-2);
     font-family: var(--fuente-montserrat);
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     background-color: var(--color-4);
 }
 
@@ -120,20 +119,43 @@ body
     background-color: var(--color-1);
 }
 
+.pagina__logo
+{
+    width: 50%;
+}
+
 .footer 
 {
     background-color: var(--color-3);
-    padding: 24px;
+    padding: 0.75rem;
     color: var(--color-1);
     text-align: center;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .destaque__footer 
 {
     color: var(--color-4);
-    border-radius: 8px;
-    border: 2px solid var(--color-4);
+    border-radius: 0.5rem;
+    border: 0.125rem solid var(--color-4);
+}
+
+@media (max-width: 1125px)
+{
+    .header
+    {
+        padding: 10%;
+    }
+
+    .header__menu
+    {
+        justify-content: center;
+    }
+
+    .pagina
+    {
+        flex-direction: column-reverse;
+    }
 }
