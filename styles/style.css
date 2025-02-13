@@ -138,6 +138,7 @@ body
 
 .destaque__footer 
 {
+    font-family: var(--fuente-krona);
     color: var(--color-4);
     border-radius: 0.5rem;
     border: 0.125rem solid var(--color-4);
